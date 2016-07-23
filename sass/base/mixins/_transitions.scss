@@ -1,15 +1,3 @@
-// ----------------------------------------------------------------------
-
-  // Transitions
-
-// ----------------------------------------------------------------------
-
-// example: @include single-transition(background, 1s, ease-in-out, 0);
-// @include single-transition(transition-property , transition-duration , transition-timing-function );
-// tranistion-property : transition-property ： none | all | [ <IDENT> ] [ ',' <IDENT> ]*
-// transition-duration :
-//@include transition(all,0.2s);
-
 @mixin transition($property_style, $duration_time) {
   -webkit-transition: $property_style $duration_time;
      -moz-transition: $property_style $duration_time;
