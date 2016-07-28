@@ -83,13 +83,13 @@ Grunt和 Grunt 套件是通過 npm 安裝管理的，npm是 Node.js 的套件管
 # 四 bower  install
 <br />
 1. build bower  
-`c: user/project/npm install -g bower`
-<br />
+`c: user/project/npm install -g bower`   
+<br /><br />
 2. build  bower.json
-` bower init ` 建立bower.json檔
-<br />
-3. build `.bowerrc` file local base path
-
+` bower init ` 建立bower.json檔   
+<br /><br />
+3. build `.bowerrc` file local base path  
+<br /><br />
 .bowerrc內容
 <pre><code>
 {
