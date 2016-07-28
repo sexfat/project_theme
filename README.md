@@ -5,6 +5,7 @@
 
 
 # 一 基本環境建置
+這部分只需要做一次，以後每次專案在開發時，只需要跑 npm install部分。
 <br />
 ## 1.Install node.js
 <br />
@@ -16,14 +17,14 @@
 <br />
 ## 2.Install ruby ( Windows User )
 <br />
- **1. Windows user**  
+ **Windows user**  
   RubyInstaller  http://rubyinstaller.org/downloads/    
   (除了一直按 Next 之外，記得安裝途中把 *Add Ruby executables to your PATH * 勾選起來。)    
 
  ![ruby](http://i1.wp.com/naturaljenius.com/wp-content/uploads/2011/10/Ruby-Install-1.png "rubyinstaller")   
 
  <br /><br />
- **2. Mac user is not install**
+ **Mac user is not install**
 
 <br /><br />
 ## 3.Install Sass
