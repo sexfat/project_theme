@@ -1,6 +1,8 @@
 # Grunt 開發專案
 <br />
-專案建置的流程，注意有分使用  Windows 和 Mac ，
+專案建置的流程，注意有分使用  Windows 和 Mac   
+Command line 指令操作 [Command Line指令](https://www.renfei.org/blog/mac-os-x-terminal-101.html)
+
 <br /><br /><br />
 
 
@@ -97,6 +99,13 @@ Grunt和 Grunt 套件是通過 npm 安裝管理的，npm是 Node.js 的套件管
   "directory" : "libs"
 }
 </code></pre>
+<br />
+
+### 備註
+`c:/project/bower help` 查詢bower指令  
+<br />
+[bower 詳細介紹](http://edentsai231.logdown.com/posts/198741-bower-front-end-kit-management-tool)
+
 <br />
 <br />
 <br />
