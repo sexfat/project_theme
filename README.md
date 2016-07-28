@@ -24,7 +24,7 @@
  ![ruby](http://i1.wp.com/naturaljenius.com/wp-content/uploads/2011/10/Ruby-Install-1.png "rubyinstaller")   
 
  <br /><br />
- **Mac user is not install**
+ ~~Mac user is not install~~
 
 <br /><br />
 ## 3.Install Sass
@@ -55,11 +55,11 @@
 Grunt和 Grunt 套件是通過 npm 安裝管理的，npm是 Node.js 的套件管理器。
 
 **Open**    Terminal.app / 終端機  or Command
-
+ <br /><br />
 **type**   `npm install -g grunt-cli`
-
+ <br /><br />
 **mac user type**  `sudo npm install -g grunt-cli`
-
+ <br /><br />
 **-g**   全域  在c:底下執行
 
 ~~附註~~ ： grunt 執行要有 package.json / Gruntfile.js
