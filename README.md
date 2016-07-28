@@ -36,8 +36,10 @@
  輸入  `gem install sass`
 
  Double-check - you can on "Ruby  Terminal"  type   輸入  `sass -v` 看是否有灌成功
-  如果有成功 會return  `Sass 3.4.22`  版本
-<br /><br />
+  如果有成功 會return  `Sass 3.4.22`  版本   
+
+<br />
+<br />
  **2. Mac user**
 
  Open the Mac's  Terminal.app / 終端機
