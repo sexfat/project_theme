@@ -20,7 +20,7 @@
 
  **2. Mac user is not install**
 
- ## Install Sass
+## Install Sass
 
  **1. Windows user**
 
@@ -55,54 +55,60 @@ Grunt和 Grunt 套件是通過 npm 安裝管理的，npm是 Node.js 的套件管
 
 **-g**   全域  在c:底下執行
 
+~~附註~~ ： grunt 執行要有 package.json / Gruntfile.js
 
-## ---------------
 
-## npm install
 
-## bower  install
+
+# 三 npm install
+
+`c: user/project/npm install`  在執行的專案下灌套件，套件會放在node_modules 資料夾裡
+
+
+
+# 四 bower  install
 
 1. build bower  
-<code>npm install -g bower</code>
+`c: user/project/npm install -g bower`
 
 2. build  bower.json
-<code>bower init<code>
+` bower init ` 建立bower.json檔
 
-3. build <code> .bowerrc </code> file local base path
+3. build `.bowerrc` file local base path
 
+.bowerrc內容
 <pre><code>
 {
   //套件會建在這資料夾裡
-  "directory" : "views/libs"
+  "directory" : "libs"
 }
 </code></pre>
 
 
 
-##sass Structure
+# 五 sass Structure
 
 ```
 sass/
 |
 |– base/
+|  |– mixins             # mixins module
+|   |– _font.scss        # Typography rules
+|   |– _mixin.scss       # mixin  input
 |   |– _reset.scss       # Reset/normalize
-|   |– _typography.scss  # Typography rules
+|   |– _variables.scss   # variables rules
 |   ...                  # Etc…
 |
-|– components/
-|   |– _buttons.scss     # Buttons
-|   |– _carousel.scss    # Carousel
-|   |– _cover.scss       # Cover
-|   |– _dropdown.scss    # Dropdown
-|   ...                  # Etc…
-|
-|– layout/
-|   |– _navigation.scss  # Navigation
-|   |– _grid.scss        # Grid system
+|– modules/
 |   |– _header.scss      # Header
 |   |– _footer.scss      # Footer
 |   |– _sidebar.scss     # Sidebar
 |   |– _forms.scss       # Forms
+|   ...                  # Etc…
+|
+|– layout/
+|   |– _rwd.scss         # RWD system
+|   |– _grid.scss        # Grid system
 |   ...                  # Etc…
 |
 |– pages/
@@ -110,17 +116,13 @@ sass/
 |   |– _contact.scss     # Contact specific styles
 |   ...                  # Etc…
 |
-|– sass-utils/
-|   |– _variables.scss   # Sass Variables
-|   |– _functions.scss   # Sass Functions
-|   |– _mixins.scss      # Sass Mixins
-|   |– _helpers.scss     # Class & placeholders helpers
-|
 |– vendors/
 |   |– _bootstrap.scss   # Bootstrap
 |   |– _jquery-ui.scss   # jQuery UI
 |   ...                  # Etc…
 |
+|– views/
+|   |– main.scss         # index scss
+|   ...                  # Etc…
 |
-`– style.scss            # Primary Sass file
 ```
