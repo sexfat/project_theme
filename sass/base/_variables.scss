@@ -56,6 +56,8 @@ $line-height-computed:    floor(($font-size-base * $line-height-base)) !default;
 // $helvetica: Helvetica, Arial, sans-serif;
 $helvetica:               'Helvetica Neue', Helvetica, Arial, sans-serif !default;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
+$system:                  -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !default;
+
 
 
 // ----------------------------------------------------------------------
@@ -68,7 +70,7 @@ $grid-columns: 12;
 // ----------------------------------------------------------------------
 	// Layout Breakpoints
 // ----------------------------------------------------------------------
-$maxWidth: 1280;
+$maxWidth: 1024;
 
 
 

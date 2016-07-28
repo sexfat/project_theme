@@ -20,6 +20,23 @@
 *:before {
       @include box-sizing(border-box);
 }
+
+// .container {
+//
+// @include respond-to(large) {
+//    width:1366px;
+//    @include margin-auto();
+//   };
+// @include respond-to(medium) {
+//   width:800px;
+//   @include margin-auto();
+//   };
+// @include respond-to(small) {
+//   width:640px;
+//   @include margin-auto();
+//   };
+// }
+
 .row {
       @include rem("max-width", $maxWidth);
       @include clearfix();
@@ -32,7 +49,7 @@
 .col {
       margin-left: 1.6%;
 }
-@include respond-to(large) {
+
       %col {
             float: left;
       }
@@ -46,8 +63,6 @@
       .col_12 {
             margin-left: 0;
       }
-}
-
 //medium grid
 @include respond-to(medium) {
       %m_col {
