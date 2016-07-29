@@ -85,7 +85,7 @@ Grunt和 Grunt 套件是通過 npm 安裝管理的，npm是 Node.js 的套件管
 # 四 bower 初始化設定 install
 <br />
 1. build bower  
-`c: user/project/npm install -g bower`   
+`c: user/npm install -g bower`   
 <br /><br />
 2. build  bower.json
 ` bower init ` 建立bower.json檔   
@@ -157,6 +157,9 @@ sass/
 `c: user/project-name/npm i   執行 package.json 裡套件`   
 `c: user/project-name/bower i  執行bower.json裡套件`
 
+# 資源介紹
+
+[sass doc](http://sass-lang.com/documentation/file.SASS_REFERENCE.html)
 
 # 問題解決
 
@@ -172,13 +175,13 @@ at readCachedConfig (/usr/local/lib/node_modules/bower/lib/config.js:19:23)
 at defaultConfig (/usr/local/lib/node_modules/bower/lib/config.js:11:12)
 at Object.<anonymous> (/usr/local/lib/node_modules/bower/lib/index.js:16:32)
 at Module._compile (module.js:425:26)
-at Object.Module._extensions..js (module.js:432:10)`
+at Object.Module._extensions..js (module.js:432:10)
 ```
 <br />
 I am still getting the same error, even after    
-`c: user/sudo bower install --allow-root`     <br>
-`c: user/udo bower install <package>`    <br>
-<br>
+`c: user/sudo bower install --allow-root`     <br />
+`c: user/sudo bower install <package>`    <br />
+<br />
 after still any question fixed it       
 `c: user/sudo chown -R $USER:$GROUP ~/.npm`   
 `c: user/sudo chown -R $USER:$GROUP ~/.config`   
