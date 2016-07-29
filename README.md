@@ -175,14 +175,12 @@ at Module._compile (module.js:425:26)
 at Object.Module._extensions..js (module.js:432:10)`
 ```
 <br />
-<br />
-
-I am still getting the same error, even after    
+1. I am still getting the same error, even after    
 `c: user/sudo bower install --allow-root`    
 `c: user/udo bower install <package>`   
+<br /><br />
 
-after still any question   
-<br />
-fixed it with    
+
+2. after still any question fixed it       
 `c: user/sudo chown -R $USER:$GROUP ~/.npm`   
 `c: user/sudo chown -R $USER:$GROUP ~/.config`   
