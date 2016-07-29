@@ -82,7 +82,7 @@ Grunt和 Grunt 套件是通過 npm 安裝管理的，npm是 Node.js 的套件管
 
 
 
-# 四 bower  install
+# 四 bower 初始化設定 install
 <br />
 1. build bower  
 `c: user/project/npm install -g bower`   
@@ -149,3 +149,39 @@ sass/
 |   ...                  # Etc…
 |
 ```
+
+# 六 現有專案執行
+
+執行    
+`c: user/project-name/npm i   執行 package.json 裡套件`   
+`c: user/project-name/bower i  執行bower.json裡套件`
+
+
+# 問題解決
+
+## 如果在bower i 出現權限的問題
+
+```js
+at Error (native)
+at Object.fs.openSync (fs.js:584:18)
+at Object.fs.readFileSync (fs.js:431:33)
+at Object.create.all.get (/usr/local/lib/node_modules/bower/lib/node_modules/configstore/index.js:35:26)
+at Object.Configstore (/usr/local/lib/node_modules/bower/lib/node_modules/configstore/index.js:28:44)
+at readCachedConfig (/usr/local/lib/node_modules/bower/lib/config.js:19:23)
+at defaultConfig (/usr/local/lib/node_modules/bower/lib/config.js:11:12)
+at Object.<anonymous> (/usr/local/lib/node_modules/bower/lib/index.js:16:32)
+at Module._compile (module.js:425:26)
+at Object.Module._extensions..js (module.js:432:10)`
+```
+<br />
+<br />
+
+I am still getting the same error, even after    
+`c: user/sudo bower install --allow-root`    
+`c: user/udo bower install <package>`   
+
+after still any question   
+<br />
+fixed it with    
+`c: user/sudo chown -R $USER:$GROUP ~/.npm`   
+`c: user/sudo chown -R $USER:$GROUP ~/.config`   
